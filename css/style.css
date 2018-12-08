@@ -1,0 +1,517 @@
+body {
+    background: turquoise;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main_container {
+    width: 100vw;
+    height: 1200px;
+    margin: 0 0;
+    background-color: #eeeeee;
+    display: grid;
+    grid-template-columns: 200px 7fr;
+    grid-template-rows: 60px 48px 240px 240px 1fr;
+    grid-template-areas: "header header" "subheader subheader";
+}
+.header {
+    border: 1px black none;
+    background-color: #eeeeee;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left {
+    width: 900px;
+    height: 50px;
+    border: 1px black none;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.logo {
+    width: 244px;
+    height: 48px;
+    border: 1px black none;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo:hover {
+    cursor: pointer;
+}
+.search {
+    width: 650px;
+    height: 48px;
+    border: 1px black none;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+input:hover {
+    cursor: text;
+}
+.search > input {
+    width: 100%;
+    font: 13px/27px Arial,sans-serif;
+}
+.search_button:hover {
+    cursor: pointer;
+}
+
+.header_right {
+    width: 120px;
+    height: 50px;
+    border: 1px black none;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
+.applications:hover {
+        cursor: pointer;
+}
+.notifications:hover {
+    cursor: pointer;
+}
+.profile:hover {
+    cursor: pointer;
+}
+.sub_header {
+    border: 1px black none;
+    background-color: white;
+    grid-area: subheader;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.subheader-right {
+    width: 137px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px black none;
+    margin-right: 25px;
+}
+.subheader-right > img:hover {
+    cursor: pointer;
+}
+.subheader-right > img{
+    margin-right: 20px;
+}
+.sidemenu_top {
+    border: 1px black none;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    background-color: rgba(245, 245, 245, 0.95);
+    grid-column:1;
+    grid-row: 2/4;
+}
+.eglence {
+    width: 200px;
+    height: 48px;
+    background-color: #444;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.ikon_eglence {
+    width: 65px;
+    height: 48px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text_eglence {
+    color: rgb(255, 255, 255);
+    font-size: 18;
+    font-weight: 300;
+    font-family:  "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.uygulamalar {
+    width: 200px;
+    height: 48px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.ikon_uygulamalar {
+    width: 65px;
+    height: 48px;
+    background-color: #689f38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ikon_uygulamalar:hover {
+    cursor: pointer;
+}
+.text_uygulamalar{
+    width: 127px;
+    color: rgba(68, 68, 68, 0.658);
+    font-size: 18;
+    font-weight:300;
+    font-family:  "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.text_uygulamalar:hover {
+    background-color: #689f38;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.filmler {
+    width: 200px;
+    height: 48px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.text_filmler:hover {
+    background-color: #ed3b3b;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.ikon_filmler:hover {
+    cursor: pointer;
+}
+.ikon_filmler {
+    width: 65px;
+    height: 48px;
+    background-color: #ed3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text_filmler {
+    width: 127px;
+    color: rgba(68, 68, 68, 0.658);
+    font-size: 18;
+    font-weight: 300;
+    font-family:  "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.muzik {
+    width: 200px;
+    height: 48px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.text_muzik:hover {
+    background-color: #ef6c00;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.ikon_muzik:hover {
+    cursor: pointer;
+}
+.ikon_muzik {
+    width: 65px;
+    height: 48px;
+    background-color: #ef6c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text_muzik {
+    width: 127px;
+    color: rgba(68, 68, 68, 0.658);
+    font-size: 18;
+    font-weight: 300;
+    font-family:  "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.kitaplar {
+    width: 200px;
+    height: 48px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.text_kitaplar:hover {
+    background-color: #039be5;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.ikon_kitaplar:hover {
+    cursor: pointer;
+}
+.ikon_kitaplar {
+    width: 65px;
+    height: 48px;
+    background-color: #039be5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text_kitaplar {
+    width: 127px;
+    color: rgba(68, 68, 68, 0.658);
+    font-size: 18;
+    font-weight: 300;
+    font-family:  "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.cihazlar {
+    width: 200px;
+    height: 48px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.text_cihazlar:hover {
+    background-color: #658092;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.ikon_cihazlar:hover {
+    cursor: pointer;
+}
+.ikon_cihazlar {
+    width: 65px;
+    height: 48px;
+    background-color: #658092;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text_cihazlar {
+    width: 127px;
+    color: rgba(68, 68, 68, 0.658);
+    font-size: 18;
+    font-weight: 300;
+    font-family:  "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.sidemenu_bottom {
+    border-top: 1px solid rgba(217,217,217,1);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    background-color: rgba(238,238,238,0.95);
+    grid-column:1;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.sidemenu_bottom > ul {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sidemenu_bottom > ul > li {
+    width: 180px;
+    height: 30px;
+    margin-left: -40px;
+    list-style-type: none;
+    color: rgba(51, 51, 51, 0.95);
+    font-size:14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.list:hover {
+    background-color: #b3b3b367;
+    cursor: pointer;
+}
+.body {
+    border: 1px black none;
+    background-color: #eeeeee;
+    grid-column: 2;
+    grid-row: 3/6;
+}
+.container {
+    border: 1px black none;
+    width: 950px;
+    height: 750px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.title {
+    width: 840px;
+    height: 39px;
+    border: 1px black none;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+.yeni_cikanlar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgba(51, 51, 51, 0.712);
+    font-size: 28px;
+    text-align: left;
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    font-weight: 100;
+    line-height: 39.2;
+}
+.yeni_cikanlar:hover {
+    cursor: pointer;
+}
+.others_button {
+    border: 1px black none;
+    background-color: #ed3b3b;
+    width: 79px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.others_button:hover {
+    cursor: pointer;
+    background-color: #ed3b3bd2
+}
+.item {
+    border: 1px black none;
+    width: 160px;
+    height: 330px;
+    background-color: white;
+    border: 1px black none;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.item:hover {
+    cursor: pointer;
+}
+.item_image {
+    width: 160px;
+    height: 245px;
+}
+.details {
+    width: 160px;
+    height: 80px;
+    border: 1px black none;
+}
+.film_name {
+    border: 1px black none;
+    width: 160px;
+    height: 48px;
+    margin-top: 2px;
+}
+
+.name {
+    border: 1px black none;
+    width: 140px;
+    height: 18px;
+    color: #212121;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    padding-left: 5px;
+}
+.name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.language {
+    border: 1px black none;
+    width: 132px;
+    height: 16px;
+    color: #616161;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 6px;
+    margin: 1px 0;
+}
+.other_details {
+    border: 1px black none;
+    width: 160px;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.rating {
+    border: 1px black none;
+    width: 65.55px;
+    height: 14px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.rating > img {
+    margin-left: 5px;
+}
+.price {
+    border: 1px black none;
+    width: 59.88px;
+    height: 15px;
+    color: #ed3b3b;
+    font-size: 13px;
+}
+.subtitle {
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+}
+.clr {
+    color: #555;
+}
+.linkli:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.alt {
+    width: 1000px;
+}
